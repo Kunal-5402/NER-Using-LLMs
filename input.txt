@@ -1,0 +1,17 @@
+Example of NER: 
+
+Input text: “conditions can result in the bottoming out the suspension and amplification of the stress 
+placed on the floor truss network. the additional stress can result in the fracture of welds securing the floor truss network system to the chassis frame rail and/or fracture of the floor truss network support system. the possibility exists that there could be damage to electrical wiring and/or fuel lines which could potentially lead to a fire.” 
+
+Expected Output:  
+{"Entity": "bottoming out the suspension", "Label": "Failure Issue"}, 
+{"Entity": "amplification of the stress", "Label": "Failure Issue"},
+{"Entity": "floor truss network", "Label": "Component"}, 
+{"Entity": "fracture of welds", "Label": "Failure Issue"},  
+{"Entity": "chassis frame rail", "Label": "Component"},  
+{"Entity": "floor truss network support system", "Label": "Component"}, 
+{"Entity": "damage to electrical wiring", "Label": "Failure Issue"}, 
+{"Entity": "fuel lines", "Label": "Component"}, 
+{"Entity": "fire", "Label": "Failure Issue"}
+
+using the above example, Please extract all the automotive domain entities from given below input text. Some labels that I want to manually provide are: Failure Issue, Component, Vehicle model, Corrective action. For these lables extract the automotive entities.
